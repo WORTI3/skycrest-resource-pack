@@ -1,0 +1,69 @@
+{
+  "namespace": "pause",
+  "menu_background@pause.transparent_background": {
+    "$store_ignored": true,
+    "size": ["100% - 60px", "100%c - 110px"],
+    "$focus_border_size": [0, 1],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "alpha": 0.0,
+    "controls": [
+      {
+        "button_panel": {
+          "type": "stack_panel",
+          "size": ["100% - 8px", "100%c"],
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "return_to_game_button@pause.return_to_game_button": {
+                "$default_button_texture|default": "textures/skycrest/standard_button",
+                "$hover_button_texture|default": "textures/skycrest/standard_button_hover",
+                "$pressed_button_texture": "textures/skycrest/standard_button_hover",
+                "$focus_border_size": [0, 1],
+                "$button_text": "§fResume game"
+              }
+            },
+            { "spacer@pause.vertical_padding": {} },
+            {
+              "srttings_button@pause.settings_button": {
+                "$default_button_texture|default": "textures/skycrest/standard_button",
+                "$hover_button_texture|default": "textures/skycrest/standard_button_hover",
+                "$pressed_button_texture": "textures/skycrest/standard_button_hover",
+                "$focus_border_size": [0, 1],
+                "$button_text": "§fSettings"
+              }
+            },
+            { "second_spacer@pause.vertical_padding": {} },
+            {
+              "server_store_button@pause.server_store_button": {
+                "ignored": "$store_ignored"
+              }
+            },
+            {
+              "server@pause.vertical_padding": {
+                "ignored": "$store_ignored",
+                "bindings": [
+                  {
+                    "binding_name": "#server_store_button_visible",
+                    "binding_name_override": "#visible",
+                    "binding_type": "global"
+                  }
+                ]
+              }
+            },
+            {
+              "quit_button@pause.quit_button": {
+                "$default_button_texture|default": "textures/skycrest/standard_button",
+                "$hover_button_texture|default": "textures/skycrest/standard_button_hover",
+                "$pressed_button_texture": "textures/skycrest/standard_button_hover",
+                "$focus_border_size": [0, 1],
+                "$button_text": "§fSave and exit game"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

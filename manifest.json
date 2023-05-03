@@ -1,0 +1,17 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "SkyCrest RP",
+    "name": "SkyCrest RP",
+    "uuid": "74954219-db74-453d-bb16-ae4e3403a10a",
+    "version": [1, 0, 0]
+  },
+  "modules": [
+    {
+      "description": "The official play.skycrestmc.net resource pack",
+      "type": "resources",
+      "uuid": "78ebd5a4-386e-4617-9c8c-cd9d0a226f25",
+      "version": [1, 0, 0]
+    }
+  ]
+}
